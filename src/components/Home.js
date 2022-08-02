@@ -6,7 +6,7 @@ const Home = () => {
     <>
       <Title title="Home" />
       <button>
-        <NavLink style={{ textDecoration: 'none' }} to="/login">Login</NavLink>
+        <NavLink to="/login">Login</NavLink>
       </button>
     </>
   )

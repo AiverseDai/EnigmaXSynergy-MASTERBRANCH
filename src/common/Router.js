@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Links } from "./Routes";
+import { Links } from "./Links";
 import Error404 from "../components/Error404";
 
 export default function Router() {
@@ -10,7 +10,7 @@ export default function Router() {
           <Route key={i} exact path={route.path} element={route.element} />
         );
       })}
-      <Route path="*" element={<Error404/>} />
+      <Route path="*" element={<Error404 />} />
     </Routes>
   )
 }
