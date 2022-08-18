@@ -1,12 +1,14 @@
 import { BrowserRouter } from "react-router-dom";
 import Router from "./common/Router";
-import "./assets/css/index.css"
+import "./assets/css/index.css";
+import MyNfts from "./components/User/MyNfts";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Router/>
-    </BrowserRouter>
+    <MyNfts />
+    // <BrowserRouter>
+    //   <Router/>
+    // </BrowserRouter>
   );
 }
 

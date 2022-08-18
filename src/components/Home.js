@@ -5,6 +5,7 @@ const Home = () => {
   return (
     <>
       <Title title="Home" />
+      
       <button>
         <NavLink to="/login">Login</NavLink>
       </button>

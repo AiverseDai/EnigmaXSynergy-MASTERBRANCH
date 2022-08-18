@@ -1,0 +1,14 @@
+.heading {
+  text-align: center;
+  color: #0A8270;
+}
+.title {
+  color: #494949;
+}
+.price {
+  color: #0A8270;
+}
+.cardSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
