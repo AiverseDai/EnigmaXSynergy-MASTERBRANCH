@@ -1,0 +1,41 @@
+.signPage {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+}
+h2 {
+  color: #0A8270;
+  margin-bottom: 2rem;
+}
+.container {
+  height: 80%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+.energy {
+  height: 70vh;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 30vw;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background-color: #E9FFF3;
+}
+.input {
+  background-color: #E9FFF3;
+  border-color: black;
+  width: 18rem;
+}
+.button {
+  margin-top: 1em;
+  width: 100%;
+  font-size: x-large;
+}
