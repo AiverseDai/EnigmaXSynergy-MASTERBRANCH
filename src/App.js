@@ -11,11 +11,11 @@ function App() {
   const [login, setLogin] = useState(true);
   return (
     <div className="App">
-      <Header/>
+      {/* <Header/>
       <About/>
       <Bproperty/>
-      <Agents/>
-      {/* <MyNfts /> */}
+      <Agents/> */}
+      <MyNfts />
     </div>
   );
 }
