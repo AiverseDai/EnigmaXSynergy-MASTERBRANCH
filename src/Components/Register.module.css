@@ -1,41 +1,39 @@
-.signPage {
-  height: 100vh;
-  width: 100vw;
+.loginContainer {
+  z-index: 100;
   position: absolute;
-  top: 0;
+  top: 0px;
+  right: 0px;
+  background-color: #FFFF;
+  height: 100vh;
+  width: 40vw;
 }
-h2 {
-  color: #0A8270;
-  margin-bottom: 2rem;
+.close {
+  float: left;
+  margin: 10px;
+  cursor: pointer;
 }
-.container {
-  height: 80%;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  
-}
-.energy {
-  height: 70vh;
-}
-.card {
+.loginForm {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70vh;
-  width: 30vw;
-  padding: 2rem;
-  border-radius: 1.5rem;
-  background-color: #E9FFF3;
+  flex-direction: column;
+  height: 100vh;
 }
-.input {
-  background-color: #E9FFF3;
-  border-color: black;
-  width: 18rem;
+.formGroup {
+  width: 60%;
+  margin: 15px;
 }
-.button {
-  margin-top: 1em;
+.formControl {
+  background-color: #E5F2FF;
   width: 100%;
-  font-size: x-large;
+  padding: 0.5rem;
+}
+.loginButton {
+  background-color: #36AE7C;
+  width: 100%;
+  padding: 0.5rem;
+}
+.google {
+  margin: 10px;
+  text-align: center;
 }

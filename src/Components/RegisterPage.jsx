@@ -1,38 +1,29 @@
-import {useState} from 'react';
-import Logo from "../images/logo.png";
-import Energy from "../images/energy.png";
-
+import React from 'react';
+import { AiOutlineClose } from 'react-icons/ai'
 import Form from 'react-bootstrap/Form';
-import Card from 'react-bootstrap/Card';
-import styles from "./Register.module.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
+import styles from './Register.module.css';
 
-const SignIn = ({show, setShow}) => {
-  return (
-    
-    <div className={styles.signPage}>
-
-    {
-      show &&
-      <div className={styles.container}>
-        <Card className={styles.card}>
-          <h2 >Energy NFT</h2>
-          <Form className={styles.form}>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Register Id</Form.Label>
-            <Form.Control className={styles.input} type="text" placeholder="Enter Register Id" />
+const LogIn = ({login, setLogin}) => {
+  return (  
+    <div >
+      {
+        login &&
+        <div className={styles.loginContainer}>
+          <AiOutlineClose size={30} className={styles.close} onClick={() => setLogin(false)} />
+          <Form className={styles.loginForm}>
+            <h2 className={styles.heading}>Register Id</h2>
+            <Form.Group className={styles.formGroup} controlId="formBasicEmail">
+              <Form.Control type="email" className={styles.formControl} placeholder="Enter Register Id" />
+            </Form.Group>
+            <Form.Group className={styles.formGroup} controlId="formBasicPassword">
+            <Button varient="success" className={styles.loginButton}>Signup</Button>
           </Form.Group>
-          <Button className={styles.button} variant="success" type="submit">
-            Sign In
-          </Button>
           </Form>
-        </Card>
-      </div>
-
-    }  
+        </div>
+      }
     </div>
   )
 }
 
-export default SignIn
+export default LogIn;
