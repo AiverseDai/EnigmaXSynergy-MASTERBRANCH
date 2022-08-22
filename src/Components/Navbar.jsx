@@ -19,7 +19,7 @@ function Navbar(){
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Whitepaper</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a onClick={} href="#">Mint</a></li>
+                <li><a href="#">Mint</a></li>
                 <li><a id="address" onClick={connectWallet} href="#">Connect Wallet</a></li>
             </ul>
         </nav>
